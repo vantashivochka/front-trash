@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Вантажівочка - грузоперевезення та вивіз сміття",
+    title: "Вантажівочка - вивіз сміття по м.Київ та Київській області",
     description: "Вивіз сміття по м.Київ та Київській області",
     images: ["/og-thumbnail.jpg"],
     creator: "@denvudd",
