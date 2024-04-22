@@ -47,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-WF53G2GB" />
+      {/* <GoogleTagManager gtmId="GTM-WF53G2GB" /> */}
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased bg-slate-50 dark:bg-slate-900 flex flex-col",
