@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
   Collapsible,
   CollapsibleContent,
@@ -58,7 +57,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
       return data;
     },
     onSuccess: () => {
-      router.push("/thank-you");
+      router.push("/garbage/thank-you");
     },
   });
 
@@ -124,6 +123,69 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
             )}
           />
 
+          <Collapsible>
+            <CollapsibleTrigger className="text-sm text-muted-foreground inline-flex items-center text-start gap-1 hover:text-gray-800 dark:hover:text-gray-300 transition-colors">
+              <Plus className="w-4 h-4" />
+              Вказати додаткову інформацію (не обов&apos;язково)
+            </CollapsibleTrigger>
+            <CollapsibleContent>
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 100 }}
+                transition={{ duration: 0.5 }}
+                className="flex flex-col gap-4 mt-4"
+              >
+                <FormField
+                  control={form.control}
+                  name="type"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Тип вантажу</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Наприклад, будівельний або металевий"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="city"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Місто</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Наприклад, м. Київ або м. Ірпінь"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Додаткова інформація</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Наприклад, кількість вантажу, поверхи"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </motion.div>
+            </CollapsibleContent>
+          </Collapsible>
           <Button type="submit" isLoading={isSending}>
             Замовити дзвінок
           </Button>

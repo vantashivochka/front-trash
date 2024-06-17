@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
               />
             </Link>
             <div className="flex flex-col gap-0.5">
-              <span className="font-bold uppercase">Вантажівочка</span>
+              <span className="font-bold uppercase">Сміттєвозочка</span>
               <span className="hidden xs:inline text-sm text-muted-foreground min-w-[220px]">
                 Вивіз сміття у м. Київ та області
               </span>
@@ -45,7 +45,6 @@ const Navbar: React.FC = () => {
                   <a href={item.path}>{item.title}</a>
                 </li>
               ))}
-              <ModeToggle />
             </ul>
           </nav>
           <NavbarMobile />

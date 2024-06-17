@@ -1,12 +1,13 @@
-import { Inter as FontSans } from "next/font/google";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import React from "react";
+import { GoogleTagManager } from "@next/third-parties/google";
+import "./globals.css";
 import Providers from "@/components/providers/providers";
 import { Toaster } from "sonner";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
-import "./globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { Inter as FontSans } from "next/font/google";
+import { Metadata } from "next";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -14,10 +15,10 @@ export const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Послуги Вантажівочка – Вивіз сміття 24/7",
+  title: "Послуги Сміттєвозочка – Вивіз сміття 24/7",
   description: "Вивіз сміття по м.Київ та Київській області",
   openGraph: {
-    title: "Вантажівочка - вивіз сміття по м.Київ та Київській області",
+    title: "Сміттєвозочка - вивіз сміття по м.Київ та Київській області",
     images: [
       {
         url: "/og-thumbnail.jpg",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Вантажівочка - вивіз сміття по м.Київ та Київській області",
+    title: "Сміттєвозочка - вивіз сміття по м.Київ та Київській області",
     description: "Вивіз сміття по м.Київ та Київській області",
     images: ["/og-thumbnail.jpg"],
     creator: "@denvudd",
@@ -46,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ua">
       {/* <GoogleTagManager gtmId="GTM-WF53G2GB" /> */}
       <body
         className={cn(

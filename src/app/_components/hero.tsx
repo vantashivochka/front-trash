@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import MaxWidthWrapper from "./ui/max-width-wrapper";
+import MaxWidthWrapper from "@/components/ui/max-width-wrapper";
 import { PhoneCall } from "lucide-react";
 import { motion } from "framer-motion";
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const Hero: React.FC = () => {
@@ -61,6 +61,16 @@ const Hero: React.FC = () => {
               className="flex justify-center gap-4 md:flex-row flex-col items-center"
             >
               <a
+                href="tel:+380633082910"
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "flex items-center gap-2 font-semibold text-lg md:text-xl"
+                )}
+              >
+                <PhoneCall aria-hidden />
+                (063) 308 29 10
+              </a>
+              <a
                 href="tel:+380633945095"
                 className={cn(
                   buttonVariants({ variant: "outline" }),
@@ -68,17 +78,7 @@ const Hero: React.FC = () => {
                 )}
               >
                 <PhoneCall aria-hidden />
-                (063) 394-50-95
-              </a>
-              <a
-                href="tel:+380994162272"
-                className={cn(
-                  buttonVariants({ variant: "outline" }),
-                  "flex items-center gap-2 font-semibold text-lg md:text-xl"
-                )}
-              >
-                <PhoneCall aria-hidden />
-                (099) 416-22-72
+                (063) 394 50 95
               </a>
             </motion.div>
           </div>

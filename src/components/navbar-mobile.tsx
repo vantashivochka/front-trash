@@ -44,7 +44,7 @@ const NavbarMobile: React.FC = () => {
               />
             </Link>
             <div className="flex flex-col gap-0.5 max-w-xs w-full text-start">
-              <span className="font-bold uppercase text-sm">Вантажівочка</span>
+              <span className="font-bold uppercase text-sm">Сміттєвозочка</span>
               <span className="text-xs font-medium text-muted-foreground">
                 Вивіз сміття у м. Київ та області
               </span>
@@ -62,10 +62,6 @@ const NavbarMobile: React.FC = () => {
                 <a href={item.path}>{item.title}</a>
               </li>
             ))}
-            <li className="flex items-center gap-2">
-              Тема:
-              <ModeToggle />
-            </li>
           </ul>
         </nav>
       </SheetContent>

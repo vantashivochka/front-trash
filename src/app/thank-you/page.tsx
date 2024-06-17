@@ -6,7 +6,7 @@ interface PageProps {}
 const Page: React.FC<PageProps> = ({}) => {
   return (
     <>
-      <ThankYoubanner />
+      <ThankYoubanner type="garbage" />
     </>
   );
 };
