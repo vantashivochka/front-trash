@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     creator: "@denvudd",
   },
   creator: "@denvudd",
-  applicationName: "Vantazhivochka",
+  applicationName: "Vantazhivochka Garbage",
   metadataBase: new URL("https://www.vantazhivochka-garbage.com/"),
   robots: {
     index: false,
