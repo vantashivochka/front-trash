@@ -7,6 +7,11 @@ export const garbageColumns: ColumnDef<PriceListItem>[] = [
   {
     accessorKey: "title",
     header: "Машина",
+    cell: ({ row }) => {
+      return <span className="text-lg text-primary font-medium">
+        {row.original.title}
+      </span>
+    },
   },
   {
     accessorKey: "price",
