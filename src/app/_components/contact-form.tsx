@@ -57,7 +57,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
       return data;
     },
     onSuccess: () => {
-      router.push("/garbage/thank-you");
+      router.push("/thank-you");
     },
   });
 
