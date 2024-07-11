@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
                     variant: "outline",
                     size: "lg",
                   }),
-                  "items-center gap-2 text-lg md:text-xl"
+                  "items-center gap-2 text-lg md:text-xl bg-[#24A1DE]"
                 )}
               >
                 <FaTelegram aria-hidden />
@@ -115,7 +115,7 @@ const Hero: React.FC = () => {
                     variant: "outline",
                     size: "lg",
                   }),
-                  "items-center gap-2 text-lg md:text-xl"
+                  "items-center gap-2 text-lg md:text-xl bg-[#7360f2]"
                 )}
               >
                 <FaViber aria-hidden />
