@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import { FaViber, FaTelegram } from "react-icons/fa";
+
 import MaxWidthWrapper from "@/components/ui/max-width-wrapper";
 import { PhoneCall } from "lucide-react";
 import { motion } from "framer-motion";
@@ -26,7 +28,7 @@ const Hero: React.FC = () => {
   return (
     <section>
       <MaxWidthWrapper id="about-us">
-        <div className="flex justify-center mt-10 md:pt-16 pb-6 max-w-4xl w-full mx-auto">
+        <div className="flex justify-center flex-col items-center gap-6 mt-10 md:pt-16 pb-6 max-w-4xl w-full mx-auto">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1.5 text-center">
               <motion.h2
@@ -47,9 +49,8 @@ const Hero: React.FC = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 className="text-3xl md:text-4xl font-bold tracking-tight"
               >
-                Вивіз сміття в{" "}
-                <span className="text-purple-600">м. Київ</span> та{" "}
-                <span className="text-purple-600">Київській області</span>
+                Вивіз сміття в <span className="text-purple-600">м. Київ</span>{" "}
+                та <span className="text-purple-600">Київській області</span>
               </motion.h1>
             </div>
             <motion.div
@@ -82,6 +83,46 @@ const Hero: React.FC = () => {
               </a>
             </motion.div>
           </div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={variants}
+            custom={4}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full text-center flex flex-col gap-2 items-center"
+          >
+            <p className="text-lg font-medium">Напишіть нам в мессенджері:</p>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://t.me/BusanAvto"
+                target="_blank"
+                className={cn(
+                  buttonVariants({
+                    variant: "outline",
+                    size: "lg",
+                  }),
+                  "items-center gap-2 text-lg md:text-xl"
+                )}
+              >
+                <FaTelegram aria-hidden />
+                Telegram
+              </a>
+              <a
+                href="viber://chat?number=+380962430879"
+                target="_blank"
+                className={cn(
+                  buttonVariants({
+                    variant: "outline",
+                    size: "lg",
+                  }),
+                  "items-center gap-2 text-lg md:text-xl"
+                )}
+              >
+                <FaViber aria-hidden />
+                Viber
+              </a>
+            </div>
+          </motion.div>
         </div>
       </MaxWidthWrapper>
     </section>
