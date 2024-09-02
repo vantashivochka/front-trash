@@ -10,6 +10,7 @@ import MaxWidthWrapper from "@/components/ui/max-width-wrapper";
 import { cn } from "@/lib/utils";
 import { ArrowUp } from "lucide-react";
 import { Suspense } from "react";
+import HeroPhotos from "@/components/hero-photos/hero-photos";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Suspense>
         <ContactForm />
       </Suspense>
+      <HeroPhotos />
       <Prices />
       <div
         style={{
