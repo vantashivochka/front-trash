@@ -20,21 +20,21 @@ const Prices: React.FC = async () => {
                   {
                     id: 1,
                     price: 600,
-                    title: "Газель (2 т.)",
+                    title: "Бус (1,5 т.)",
                   },
                   {
                     id: 2,
                     price: 600,
-                    title: "Газель (0,5 т.)",
+                    title: "Газель (2 т.)",
                   },
                   {
                     id: 3,
-                    price: 2000,
+                    price: 2400,
                     title: "ЗІЛ (5 т.)",
                   },
                   {
                     id: 4,
-                    price: 3200,
+                    price: 3500,
                     title: "КамАЗ (10 т.)",
                   },
                 ]}
