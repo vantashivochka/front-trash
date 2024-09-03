@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
                 variants={variants}
                 custom={1}
                 viewport={{ once: true, amount: 0.2 }}
-                className="text-sm md:text-lg text-muted-foreground"
+                className="text-sm md:text-lg text-primary font-medium"
               >
                 По завжди актуальним цінам
               </motion.h2>
