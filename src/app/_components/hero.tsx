@@ -72,14 +72,14 @@ const Hero: React.FC = () => {
                 (063) 308 29 10
               </a>
               <a
-                href="tel:+380633945095"
+                href="tel:+380994162272"
                 className={cn(
                   buttonVariants({ variant: "outline" }),
                   "flex items-center gap-2 font-semibold text-lg md:text-xl"
                 )}
               >
                 <PhoneCall aria-hidden />
-                (063) 394 50 95
+                (099) 416 22 72
               </a>
             </motion.div>
           </div>
