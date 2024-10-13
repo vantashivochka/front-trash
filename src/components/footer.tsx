@@ -11,16 +11,6 @@ const Footer: React.FC = () => {
         <span className="text-center">в будь-який час, без вихідних</span>
         <div className="flex justify-center md:flex-row flex-col gap-4 items-center">
           <a
-            href="tel:+380633945095"
-            className={cn(
-              buttonVariants({ variant: "outline" }),
-              "flex items-center gap-2 font-semibold text-lg md:text-xl"
-            )}
-          >
-            <PhoneCall aria-hidden />
-            (063) 394-50-95
-          </a>
-          <a
             href="tel:+380994162272"
             className={cn(
               buttonVariants({ variant: "outline" }),
@@ -28,7 +18,17 @@ const Footer: React.FC = () => {
             )}
           >
             <PhoneCall aria-hidden />
-            (099) 416-22-72
+            (099) 416 22 72
+          </a>
+          <a
+            href="tel:+380633082910"
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "flex items-center gap-2 font-semibold text-lg md:text-xl"
+            )}
+          >
+            <PhoneCall aria-hidden />
+            (063) 308 29 10
           </a>
         </div>
         <span className="font-bold text-sm text-muted-foreground text-center">
