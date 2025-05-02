@@ -62,14 +62,14 @@ const Hero: React.FC = () => {
               className="flex justify-center gap-4 md:flex-row flex-col items-center"
             >
               <a
-                href="tel:+380633082910"
+                href="tel:+380633945095"
                 className={cn(
                   buttonVariants({ variant: "outline" }),
                   "flex items-center gap-2 font-semibold text-lg md:text-xl"
                 )}
               >
                 <PhoneCall aria-hidden />
-                (063) 308 29 10
+                (063) 394 50 95
               </a>
               <a
                 href="tel:+380994162272"
