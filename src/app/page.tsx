@@ -16,17 +16,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Suspense>
-        <ContactForm />
-      </Suspense>
       <HeroPhotos />
       <Prices />
-      <div
-        style={{
-          background:
-            "url(https://sieben-umzuege-images.fra1.cdn.digitaloceanspaces.com/sieben-umzuege/images/BG/lightBlueShape.svg) 100% no-repeat",
-        }}
-      >
+      <div>
         <Cities />
         <Reviews />
         <Service />

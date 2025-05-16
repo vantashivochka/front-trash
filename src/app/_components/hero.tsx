@@ -1,13 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { FaViber, FaTelegram } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { PhoneCall } from "lucide-react";
 
 import MaxWidthWrapper from "@/components/ui/max-width-wrapper";
-import { PhoneCall } from "lucide-react";
-import { motion } from "framer-motion";
+
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import ContactForm from "./contact-form";
 
 const Hero: React.FC = () => {
   const variants = {
@@ -26,7 +28,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section>
+    <section className="bg-[url('/images/hero-bg.jpg')] bg-no-repeat bg-center bg-cover pb-6">
       <MaxWidthWrapper id="about-us">
         <div className="flex justify-center flex-col items-center gap-6 mt-10 md:pt-16 pb-6 max-w-4xl w-full mx-auto">
           <div className="flex flex-col gap-6">
@@ -37,9 +39,10 @@ const Hero: React.FC = () => {
                 variants={variants}
                 custom={1}
                 viewport={{ once: true, amount: 0.2 }}
-                className="text-sm md:text-lg text-primary font-medium"
+                className="text-sm md:text-lg text-primary font-bold"
               >
-                По завжди актуальним цінам
+                По завжди актуальним цінам<br/>
+                Першим клієнтам - знижка 10%
               </motion.h2>
               <motion.h1
                 initial="hidden"
@@ -47,7 +50,7 @@ const Hero: React.FC = () => {
                 variants={variants}
                 custom={2}
                 viewport={{ once: true, amount: 0.2 }}
-                className="text-3xl md:text-4xl font-bold tracking-tight"
+                className="text-3xl md:text-4xl font-bold tracking-tight bg-accent-foreground px-1.5 py-1 rounded-md text-muted"
               >
                 Вивіз сміття в <span className="text-purple-600">м. Київ</span>{" "}
                 та <span className="text-purple-600">Київській області</span>
@@ -91,7 +94,7 @@ const Hero: React.FC = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="w-full text-center flex flex-col gap-2 items-center"
           >
-            <p className="text-lg font-medium">Напишіть нам в мессенджері:</p>
+            <p className="text-lg font-bold text-primary">Оцінка по фото. Напишіть нам в мессенджері:</p>
             <div className="flex items-center gap-4">
               <a
                 href="https://t.me/BusanAvto"
@@ -124,6 +127,9 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
         </div>
+        <Suspense>
+          <ContactForm />
+        </Suspense>
       </MaxWidthWrapper>
     </section>
   );
