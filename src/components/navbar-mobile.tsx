@@ -10,11 +10,9 @@ import {
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import logo from "../../public/logo.png";
-import logoDark from "../../public/logo-dark.png";
+import logo from "../../public/images/logo-new.png";
 import Link from "next/link";
 import { MENU } from "@/config/menu";
-import { ModeToggle } from "./mode-toggle";
 
 const NavbarMobile: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
@@ -34,13 +32,7 @@ const NavbarMobile: React.FC = () => {
                 src={logo}
                 fill
                 alt="Вантажівочка логотип"
-                className="dark:hidden"
-              />
-              <Image
-                src={logoDark}
-                fill
-                alt="Вантажівочка логотип"
-                className="hidden dark:block"
+                className="hidden dark:block object-contain"
               />
             </Link>
             <div className="flex flex-col gap-0.5 max-w-xs w-full text-start">
