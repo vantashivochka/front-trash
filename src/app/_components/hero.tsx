@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaViber, FaTelegram } from "react-icons/fa";
 import { PhoneCall } from "lucide-react";
 
@@ -8,7 +9,16 @@ import { cn } from "@/lib/utils";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-[url('/images/hero-bg.jpg')] bg-no-repeat bg-center bg-cover pb-6">
+    <section className="relative pb-20 sm:pb-40 overflow-hidden">
+      <Image
+        src="/images/hero-bg.jpg"
+        alt=""
+        fill
+        priority
+        quality={75}
+        className="object-cover object-center -z-10"
+        aria-hidden
+      />
       <MaxWidthWrapper id="about-us">
         <div className="flex justify-center flex-col items-center gap-6 mt-10 md:pt-16 pb-6 max-w-4xl w-full mx-auto">
           <div className="flex flex-col gap-6">

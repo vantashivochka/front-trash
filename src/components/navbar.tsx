@@ -17,6 +17,7 @@ const Navbar: React.FC = () => {
                 src={logo}
                 fill
                 alt="Вантажівочка логотип"
+                sizes="(max-width: 390px) 64px, 112px"
                 className="hidden dark:block object-contain"
               />
             </Link>

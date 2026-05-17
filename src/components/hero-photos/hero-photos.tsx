@@ -52,6 +52,7 @@ const HeroPhotos: React.FC = () => {
                             height={300}
                             quality={75}
                             priority={index === 0}
+                            sizes="(max-width: 870px) 100vw, (max-width: 1280px) 50vw, 25vw"
                             className='h-full w-full object-contain object-bottom'
                         />
                     </SwiperSlide>
