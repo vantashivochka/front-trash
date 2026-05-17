@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
             <p className="text-lg font-bold text-primary">Оцінка по фото. Напишіть нам в мессенджері:</p>
             <div className="flex items-center gap-4">
               <a
-                href="https://t.me/BusanAvto"
+                href="https://t.me/VuvizSmitiaBot"
                 target="_blank"
                 className={cn(
                   buttonVariants({
@@ -127,9 +127,6 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
         </div>
-        <Suspense>
-          <ContactForm />
-        </Suspense>
       </MaxWidthWrapper>
     </section>
   );
