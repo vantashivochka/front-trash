@@ -1,6 +1,4 @@
 import Cities from "@/components/cities";
-import ContactForm from "./_components/contact-form";
-import Faq from "@/components/faq";
 import Hero from "./_components/hero";
 import Prices from "./_components/prices";
 import Reviews from "./_components/reviews/reviews";
@@ -9,7 +7,6 @@ import { buttonVariants } from "@/components/ui/button";
 import MaxWidthWrapper from "@/components/ui/max-width-wrapper";
 import { cn } from "@/lib/utils";
 import { ArrowUp } from "lucide-react";
-import { Suspense } from "react";
 import HeroPhotos from "@/components/hero-photos/hero-photos";
 
 export default function Home() {

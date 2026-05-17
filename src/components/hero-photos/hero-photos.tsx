@@ -47,10 +47,11 @@ const HeroPhotos: React.FC = () => {
                         className='relative self-center flex h-full max-h-[400px] w-full flex-col items-center justify-center rounded-lg overflow-hidden'>
                         <Image
                             src={image}
-                            alt={`Product image ${index + 1}`}
+                            alt={`Вивіз сміття – фото роботи ${index + 1}`}
                             width={818}
                             height={300}
-                            quality={100}
+                            quality={75}
+                            priority={index === 0}
                             className='h-full w-full object-contain object-bottom'
                         />
                     </SwiperSlide>

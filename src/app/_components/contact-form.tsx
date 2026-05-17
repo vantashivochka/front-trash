@@ -3,7 +3,6 @@
 import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
 import { useMutation } from "@tanstack/react-query";
 import axios from "@/lib/axios";
 
@@ -68,32 +67,15 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
     });
   }
 
-  const variants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.45,
-        delay: 4 * 0.3,
-      },
-    },
-  };
-
   return (
     <section id="contact-us">
       <Form {...form}>
-        <motion.form
+        <form
           onSubmit={form.handleSubmit(onSubmit)}
           className={cn(
             "flex flex-col gap-4 md:max-w-md md:w-full md:mx-auto mx-4 bg-secondary rounded-md px-4 py-6 border border-gray-200 dark:border-gray-500",
             className
           )}
-          initial="hidden"
-          whileInView="visible"
-          variants={variants}
-          viewport={{ once: true, amount: 0.2 }}
         >
           <h3 className="text-center text-lg font-bold">Замовити дзвінок</h3>
           <FormField
@@ -129,12 +111,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
               Вказати додаткову інформацію (не обов&apos;язково)
             </CollapsibleTrigger>
             <CollapsibleContent>
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 100 }}
-                transition={{ duration: 0.5 }}
-                className="flex flex-col gap-4 mt-4"
-              >
+              <div className="flex flex-col gap-4 mt-4">
                 <FormField
                   control={form.control}
                   name="type"
@@ -183,13 +160,13 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
                     </FormItem>
                   )}
                 />
-              </motion.div>
+              </div>
             </CollapsibleContent>
           </Collapsible>
           <Button type="submit" isLoading={isSending}>
             Замовити дзвінок
           </Button>
-        </motion.form>
+        </form>
       </Form>
     </section>
   );
