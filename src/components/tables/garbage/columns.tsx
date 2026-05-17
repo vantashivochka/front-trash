@@ -20,7 +20,7 @@ export const garbageColumns: ColumnDef<PriceListItem>[] = [
       return row.original.id !== 3 && row.original.id !== 4 ? (
         <span className="font-medium">{`${row.getValue(
           "price"
-        )}₴ + 250₴/куб.`}</span>
+        )}₴ + 500/куб.`}</span>
       ) : (
         <span className="font-medium">{`${row.getValue(
           "price"
