@@ -18,11 +18,11 @@ export const garbageColumns: ColumnDef<PriceListItem>[] = [
     header: "Ціна",
     cell: ({ row }) => {
       return row.original.id !== 3 && row.original.id !== 4 ? (
-        <span className="font-medium">{`${row.getValue(
+        <span className="font-medium">{`від ${row.getValue(
           "price"
         )}₴ + 500/куб.`}</span>
       ) : (
-        <span className="font-medium">{`${row.getValue(
+        <span className="font-medium">{`від ${row.getValue(
           "price"
         )}₴`}</span>
       );
