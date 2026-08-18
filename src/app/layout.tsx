@@ -51,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <GoogleTagManager gtmId="GTM-KRTN8T9C" />
+      <GoogleTagManager gtmId="GTM-PH59ZQGS" />
       <head>
         <script
           type="application/ld+json"
