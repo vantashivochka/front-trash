@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
             <p className="text-lg font-bold text-primary">Оцінка по фото. Напишіть нам в мессенджері:</p>
             <div className="flex items-center gap-4">
               <a
-                href="https://t.me/VuvizSmitiaBot"
+                href="https://t.me/+380994162272"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
                 Telegram
               </a>
               <a
-                href="viber://chat?number=+380994162272"
+                href="viber://chat?number=%2B380633945095"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
