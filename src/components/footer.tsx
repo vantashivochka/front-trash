@@ -21,14 +21,14 @@ const Footer: React.FC = () => {
             (099) 416 22 72
           </a>
           <a
-            href="tel:+380506665876"
+            href="tel:+380633945095"
             className={cn(
               buttonVariants({ variant: "outline" }),
               "flex items-center gap-2 font-semibold text-lg md:text-xl"
             )}
           >
             <PhoneCall aria-hidden />
-            (050) 666 58 76
+            (063) 394 50 95
           </a>
         </div>
         <span className="font-bold text-sm text-muted-foreground text-center">
